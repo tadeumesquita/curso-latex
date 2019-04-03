@@ -1,0 +1,49 @@
+%tamanho da fonte entre []
+\documentclass{article}
+
+%pacote para acentos
+\usepackage[utf8]{inputenc}
+
+%pacote para colocar os nomes em pt-br
+%sudo apt-get install texlive-lang-portuguese
+\usepackage[brazil]{babel}
+
+
+\begin{document}
+	
+	\section{Listas}
+	
+	%Listas não ordenadas
+	Lista não-ordenada:
+	\begin{itemize}
+		\item Primeiro item.
+		\item Segundo item.
+		\item Terceiro item.
+	\end{itemize}
+
+
+	%Listas ordenadas
+	Lista ordenada:
+	\begin{enumerate}
+		\item Primeiro item.
+		\item Segundo item.
+		\item Terceiro item.
+		\begin{itemize}
+			\item Primeiro subitem.
+			\item Segundo subitem.
+			\begin{itemize}
+				\item Primeiro subitem.
+				\item Segundo subitem.
+			\end{itemize}
+		\end{itemize}
+	\end{enumerate}
+
+	%Listas com descrição
+	Lista com descrição:
+	\begin{description}
+		\item[Primeiro] Este é um item.
+		\item[Segundo] Este é outro item.
+		\item[Terceiro] Este é mais um item.
+	\end{description}
+	
+\end{document}

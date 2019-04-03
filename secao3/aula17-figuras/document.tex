@@ -15,17 +15,29 @@
 %\usepackage[a4paper, margin=2cm]{geometry}
 \usepackage[a4paper, left=1cm, right=2cm, top=2cm, bottom=3cm]{geometry}
 
+\usepackage{graphicx} %pacote para adicionar imagens
+
+\usepackage{float} %força o posicionamento da imagem
+
 \begin{document}
 	
-	\title{\textbf{{\Huge Capa e Sumário}}} % titulo
+	\title{\textbf{{\Huge Inserir Figuras}}} % titulo
 	\author{Tadeu Mesquita} %autor
-	\date{Abril de 2019} %data, se apagar ele vai pegar a data do sistema
+	\date{} %data, deixar vazio para não exibir
 	\maketitle %criar o título
+	\thispagestyle{empty} %oculta a numeração da página
 	\newpage
 	
+	\setcounter{page}{1} %reseta a contagem e começa partir daqui
+	\pagenumbering{Roman} %usa algarismo romano
 	\tableofcontents %cria o sumário
 	\newpage
 	
+	\listoffigures
+	\newpage
+	
+	\setcounter{page}{1} %reseta a contagem e começa partir daqui
+	\pagenumbering{arabic} %usa algarismo romano
 	\section{Seção 1}
 	
 	Mussum Ipsum, cacilds vidis litro abertis. Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! Per aumento de cachacis, eu reclamis. Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget. Sapien in monti palavris qui num significa nadis i pareci latim.
@@ -52,6 +64,14 @@
 	
 	Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget. Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl. Mé faiz elementum girarzis, nisi eros vermeio.
 	
+	
+	\begin{figure}[H] 
+		\centering
+		\includegraphics[width=0.7\linewidth]{images/grafico1}
+		\caption[Legenda curta do gráfico 1]{Legenda longa do gráfico 1, é para ser um texto um pouco maior do que o anterior.}
+		\label{fig:grafico1}
+	\end{figure}
+	
 	Atirei o pau no gatis, per gatis num morreus. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. In elementis mé pra quem é amistosis quis leo. Mais vale um bebadis conhecidiss, que um alcoolatra anonimis.
 	
 	\section{Seção 2}
@@ -65,6 +85,13 @@
 	Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Sapien in monti palavris qui num significa nadis i pareci latim. Quem num gosta di mé, boa gentis num é. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.
 	
 	Delegadis gente finis, bibendum egestas augue arcu ut est. Quem num gosta di mim que vai caça sua turmis! A ordem dos tratores não altera o pão duris. Interagi no mé, cursus quis, vehicula ac nisi.
+	
+	\begin{figure}[H] 
+		\centering
+		\includegraphics[width=1\linewidth]{images/grafico2}
+		\caption[Legenda curta do gráfico 2]{Legenda longa do gráfico 2, é para ser um texto um pouco maior do que o anterior.}
+		\label{fig:grafico2}
+	\end{figure}
 	
 	Aenean aliquam molestie leo, vitae iaculis nisl. Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! Manduma pindureta quium dia nois paga. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum.
 	
@@ -89,6 +116,13 @@
 	Copo furadis é disculpa de bebadis, arcu quam euismod magna. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Mé faiz elementum girarzis, nisi eros vermeio. Sapien in monti palavris qui num significa nadis i pareci latim.
 	
 	Aenean aliquam molestie leo, vitae iaculis nisl. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis. Leite de capivaris, leite de mula manquis sem cabeça. Pra lá, depois divoltis porris, paradis.
+	
+	\begin{figure}[H] 
+		\centering
+		\includegraphics[width=0.7\linewidth]{images/grafico3}
+		\caption[Legenda curta do gráfico 3]{Legenda longa do gráfico 3, é para ser um texto um pouco maior do que o anterior.}
+		\label{fig:grafico3}
+	\end{figure}
 	
 	Delegadis gente finis, bibendum egestas augue arcu ut est. Si num tem leite então bota uma pinga ae cumpadi! Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl. Casamentiss faiz malandris se pirulito.
 	
